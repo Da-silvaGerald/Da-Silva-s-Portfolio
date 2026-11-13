@@ -1,0 +1,120 @@
+.cmd-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background-color: rgba(12, 11, 10, 0.84);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10vh 1rem 2rem;
+}
+
+.cmd-modal {
+  width: min(100%, 660px);
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--accent-amber);
+  border-radius: var(--radius-sharp);
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.75);
+}
+
+.cmd-modal__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+  background-color: var(--bg-primary);
+}
+
+.cmd-modal__prompt {
+  font-family: var(--font-mono);
+  color: var(--accent-amber);
+  font-weight: 600;
+}
+
+.cmd-modal__input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: var(--step-sm);
+}
+
+.cmd-modal__input:focus {
+  outline: none;
+}
+
+.cmd-modal__esc {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--border-strong);
+  color: var(--text-secondary);
+}
+
+.cmd-modal__banner {
+  background-color: var(--accent-amber);
+  color: var(--bg-primary);
+  font-family: var(--font-mono);
+  font-size: var(--step-xs);
+  font-weight: 600;
+  padding: 0.45rem 1rem;
+}
+
+.cmd-modal__list {
+  max-height: 360px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.cmd-modal__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-subtle);
+  transition: background-color var(--transition-fast);
+}
+
+.cmd-modal__item:hover,
+.cmd-modal__item:focus-visible {
+  background-color: var(--bg-hover);
+}
+
+.cmd-modal__item-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.cmd-modal__group {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--accent-amber);
+  letter-spacing: 0.08em;
+}
+
+.cmd-modal__label {
+  font-size: var(--step-sm);
+  color: var(--text-primary);
+}
+
+.cmd-modal__hint {
+  font-family: var(--font-mono);
+  font-size: var(--step-xs);
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.cmd-modal__empty {
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: var(--step-xs);
+  color: var(--text-muted);
+}

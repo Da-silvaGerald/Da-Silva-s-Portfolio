@@ -1,0 +1,60 @@
+.boot-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+.boot-terminal {
+  width: min(100%, 660px);
+  border: 1px solid var(--border-strong);
+  background-color: var(--bg-elevated);
+  padding: 1.25rem;
+  font-family: var(--font-mono);
+}
+
+.boot-terminal__header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: var(--step-xs);
+  color: var(--accent-amber);
+}
+
+.boot-terminal__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.boot-terminal__line {
+  font-size: var(--step-xs);
+  color: var(--text-primary);
+}
+
+.boot-terminal__index {
+  color: var(--text-muted);
+  margin-right: 0.5rem;
+}
+
+.boot-terminal__progress {
+  margin-top: 1rem;
+  height: 3px;
+  width: 100%;
+  background-color: var(--border-subtle);
+}
+
+.boot-terminal__progress-bar {
+  height: 100%;
+  background-color: var(--accent-amber);
+  transition: width 240ms linear;
+}
