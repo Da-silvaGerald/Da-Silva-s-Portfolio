@@ -114,7 +114,7 @@ export const projects: ProjectItem[] = [
     heroImage: {
       src: '/screenshots/cafeteria-main.png',
       alt: 'CafeteriaApp food ordering interface built with Java, FXML, CSS, and PostgreSQL',
-      caption: 'FIG 2.0 // CafeteriaApp ordering interface & PostgreSQL queue [REPLACE ME WITH REAL SCREENSHOT]'
+      caption: 'FIG 2.0 // CafeteriaApp food ordering interface built with Java, FXML, CSS, and PostgreSQL'
     },
     gallery: [
       {
@@ -155,7 +155,7 @@ export const projects: ProjectItem[] = [
     heroImage: {
       src: '/screenshots/sante-main.png',
       alt: 'SanteDiagnostics Laboratory Information Management System dashboard',
-      caption: 'FIG 3.0 // SanteDiagnostics LIMS dashboard & Jakarta Mail integration [REPLACE ME WITH REAL SCREENSHOT]'
+      caption: 'FIG 3.0 // SanteDiagnostics LIMS dashboard'
     },
     gallery: [
       {
